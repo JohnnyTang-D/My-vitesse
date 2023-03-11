@@ -18,6 +18,10 @@ import Shiki from 'markdown-it-shiki'
 import VueMacros from 'unplugin-vue-macros/vite'
 
 export default defineConfig({
+  server: {
+    host: true,
+    port: 8083,
+  },
   resolve: {
     alias: {
       '~/': `${path.resolve(__dirname, 'src')}/`,
